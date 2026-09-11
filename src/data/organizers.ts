@@ -1,0 +1,90 @@
+export type OrganizerRole =
+  | 'Lead Organizer'
+  | 'Co-Organizer'
+  | 'Lead Organizer (Faculty)'
+  | 'Co-Organizer (Faculty)'
+  | 'Co-Organizer (Student)'
+  | 'Volunteer'
+  | 'Team Member'
+  | 'Host Organization'
+  | string;
+
+export interface Organizer {
+  id: string;
+  name: string;
+  role: OrganizerRole;
+  affiliation?: string;
+  contact?: string;
+  photoUrl?: string;
+  initial?: string;
+}
+
+export const organizerTeam: Organizer[] = [
+  // Row 1
+  {
+    id: "dr-adilakshmi-gorantla",
+    name: "Dr. Adilakshmi Gorantla",
+    role: "Lead Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    contact: "+91 99853 98080",
+    initial: "A"
+  },
+  {
+    id: "dr-j-naga-surekha",
+    name: "Dr. J. Naga Surekha",
+    role: "Co-Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "J"
+  },
+  {
+    id: "mr-g-siva-sankara-rao",
+    name: "Mr. G. Siva Sankara Rao",
+    role: "Co-Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "M"
+  },
+  {
+    id: "mr-b-phanindra-kumar",
+    name: "Mr. B. Phanindra Kumar",
+    role: "Co-Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "M"
+  },
+  // Row 2
+  {
+    id: "gelli-tejaswi-venkata-aparna",
+    name: "Gelli Tejaswi Venkata Aparna",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "G"
+  },
+  {
+    id: "shaik-munthaz",
+    name: "Shaik Munthaz",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "S"
+  },
+  {
+    id: "k-naga-surendra",
+    name: "K. Naga Surendra",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "K"
+  },
+  {
+    id: "k-sreevarshini",
+    name: "K. Sreevarshini",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    initial: "K"
+  }
+];
+
+export const organizers = {
+  host: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+  primaryContact: "+91 99853 98080",
+  affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+};
+
+
