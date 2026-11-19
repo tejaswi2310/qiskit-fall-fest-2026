@@ -20,37 +20,56 @@ export interface Organizer {
 }
 
 export const organizerTeam: Organizer[] = [
-  // Row 1
+  // Faculty Organizers
   {
     id: "dr-adilakshmi-gorantla",
     name: "Dr. Adilakshmi Gorantla",
     role: "Lead Organizer (Faculty)",
-    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
     contact: "+91 99853 98080",
     initial: "A"
   },
   {
-    id: "dr-j-naga-surekha",
-    name: "Dr. J. Naga Surekha",
+    id: "dr-shobana-gorintla",
+    name: "Dr. Shobana Gorintla",
     role: "Co-Organizer (Faculty)",
-    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
-    initial: "J"
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    contact: "+91 89854 23344",
+    initial: "S"
   },
   {
-    id: "mr-g-siva-sankara-rao",
-    name: "Mr. G. Siva Sankara Rao",
+    id: "mrs-swathi-raparla",
+    name: "Mrs. Swathi Raparla",
     role: "Co-Organizer (Faculty)",
-    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
-    initial: "M"
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    contact: "+91 97030 74790",
+    initial: "S"
   },
   {
     id: "mr-b-phanindra-kumar",
     name: "Mr. B. Phanindra Kumar",
     role: "Co-Organizer (Faculty)",
-    affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
-    initial: "M"
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    contact: "+91 90142 60174",
+    initial: "B"
   },
-  // Row 2
+  {
+    id: "dr-j-naga-surekha",
+    name: "Dr. J. Naga Surekha",
+    role: "Co-Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    contact: "+91 83749 62918",
+    initial: "J"
+  },
+  {
+    id: "mrs-aruna-vipparla",
+    name: "Mrs. Aruna Vipparla",
+    role: "Co-Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    contact: "+91 90009 82182",
+    initial: "A"
+  },
+  // Student Organizers
   {
     id: "gelli-tejaswi-venkata-aparna",
     name: "Gelli Tejaswi Venkata Aparna",
@@ -78,6 +97,13 @@ export const organizerTeam: Organizer[] = [
     role: "Co-Organizer (Student)",
     affiliation: "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY",
     initial: "K"
+  },
+  {
+    id: "atchutha-teja-bharathi",
+    name: "Atchutha Teja Bharathi",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    initial: "A"
   }
 ];
 

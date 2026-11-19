@@ -25,8 +25,8 @@ export const faqs = [
     answer: "Details will be announced soon.",
   },
   {
-    question: "Where is the event?",
-    answer: "The event is conducted completely offline (in-person) at Dr. RVR NRI Institute of Technology Deemed to be University, Vijayawada.",
+    question: "Where is the event held (Online or Offline)?",
+    answer: "Qiskit Fall Fest 2026 is conducted in hybrid mode. The 6-Day Guest Lecture Series (23-28 Nov) and Ideathon (28 Nov) are virtual (online), while the Quantum Innovation Centre Inauguration (23 Nov) and School Project Expo (30 Nov) are conducted in-person on campus at Dr. RVR NRI Institute of Technology Deemed to be University, Vijayawada.",
   },
   {
     question: "How can I register?",

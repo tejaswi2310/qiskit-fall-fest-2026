@@ -7,7 +7,7 @@ export const FeatureCards = () => {
   const features = [
     {
       id: "talks",
-      title: "Seminar",
+      title: "Guest Lectures",
       description: "Insights from quantum computing leaders and researchers.",
       icon: Mic,
       iconBg: "bg-blue-900/50 border-blue-500/40 text-[#38BDF8]",

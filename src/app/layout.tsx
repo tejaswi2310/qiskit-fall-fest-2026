@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://qiskit-fall-fest-2026.vercel.app'),
   title: "Qiskit Fall Fest 2026 | Learn • Build • Explore Quantum Computing",
-  description: "Official website for Qiskit Fall Fest 2026 hosted by Dr. RVR NRI Institute of Technology Deemed to be University. Seminar sessions, innovation centre inauguration, student showcase, and ideathon.",
+  description: "Official website for Qiskit Fall Fest 2026 hosted by Dr. RVR NRI Institute of Technology Deemed to be University. Guest lecture series, innovation centre inauguration, school project expo, and ideathon.",
   keywords: [
     "Qiskit Fall Fest 2026",
     "quantum computing event",

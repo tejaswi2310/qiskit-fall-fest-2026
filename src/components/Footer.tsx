@@ -46,7 +46,7 @@ export const Footer = () => {
             </p>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-              A university quantum festival organized by the Department of Computer Science & Engineering (Data Science) at Dr. RVR NRI Institute of Technology Deemed to be University.
+              A university quantum festival organized by Dr. RVR NRI Institute of Technology Deemed to be University.
             </p>
 
             <div className="pt-2 text-xs text-slate-400 space-y-1">

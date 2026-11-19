@@ -12,17 +12,27 @@ export const FAQ = () => {
   };
 
   const renderAnswer = (text: string) => {
-    const parts = text.split(/(\*\*.*?\*\*)/g);
-    return parts.map((part, idx) => {
-      if (part.startsWith("**") && part.endsWith("**")) {
-        return (
-          <strong key={idx} className="text-white font-bold">
-            {part.slice(2, -2)}
-          </strong>
-        );
-      }
-      return part;
-    });
+    return (
+      <div className="space-y-2">
+        {text.split("\n\n").map((paragraph, pIdx) => {
+          const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+          return (
+            <p key={pIdx}>
+              {parts.map((part, idx) => {
+                if (part.startsWith("**") && part.endsWith("**")) {
+                  return (
+                    <strong key={idx} className="text-white font-bold">
+                      {part.slice(2, -2)}
+                    </strong>
+                  );
+                }
+                return part;
+              })}
+            </p>
+          );
+        })}
+      </div>
+    );
   };
 
   return (
