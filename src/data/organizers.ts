@@ -38,6 +38,14 @@ export const organizerTeam: Organizer[] = [
     initial: "S"
   },
   {
+    id: "mrs-aruna-vipparla",
+    name: "Mrs. Aruna Vipparla",
+    role: "Co-Organizer (Faculty)",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    contact: "+91 90009 82182",
+    initial: "A"
+  },
+  {
     id: "mrs-swathi-raparla",
     name: "Mrs. Swathi Raparla",
     role: "Co-Organizer (Faculty)",
@@ -60,14 +68,6 @@ export const organizerTeam: Organizer[] = [
     affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
     contact: "+91 83749 62918",
     initial: "J"
-  },
-  {
-    id: "mrs-aruna-vipparla",
-    name: "Mrs. Aruna Vipparla",
-    role: "Co-Organizer (Faculty)",
-    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
-    contact: "+91 90009 82182",
-    initial: "A"
   },
   // Student Organizers
   {

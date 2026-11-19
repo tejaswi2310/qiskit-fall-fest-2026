@@ -21,8 +21,8 @@ export const eventData: EventInfoType = {
   badge: "Offline Event • In-Person on Campus",
   description:
     "The premier quantum computing event for students, researchers, and enthusiasts. Whether you are a student, researcher, or developer, join us to explore the frontiers of quantum technology.",
-  date: "November 23 – 30, 2026",
-  time: "Hybrid Event (Online & On-Campus)",
+  date: "23 – 28 Nov (Online) • 30 Nov (On-Campus)",
+  time: "Hybrid Mode",
   venue: "Dr.RVR NRI Institute of Technology Deemed to be University",
   venueFull: "Dr.RVR NRI Institute of Technology Deemed to be University, Vijayawada, Andhra Pradesh, India",
   host: "Dr.RVR NRI Institute of Technology Deemed to be University",
@@ -174,17 +174,6 @@ export interface EventCardType {
 
 export const eventCardsData: EventCardType[] = [
   {
-    id: "guest-lectures",
-    title: "Guest Lectures",
-    description:
-      "A prestigious 6-day online lecture series featuring renowned IBM researchers, academic professors, and industry leaders exploring quantum theory, Qiskit algorithms, cryptography, and real-world quantum technologies.",
-    tag: "Online Lecture Series • 23-28 Nov 2026",
-    iconName: "Presentation",
-    date: "23 November 2026 to 28 November 2026",
-    mode: "Virtual Only (Online)",
-    isSchedule: true,
-  },
-  {
     id: "inauguration",
     title: "Inauguration of Quantum Innovation Centre",
     description:
@@ -197,6 +186,17 @@ export const eventCardsData: EventCardType[] = [
       name: "Dr. Raavi Venkata Rao",
       designation: "Chancellor, Dr. RVR & NRI Institute of Technology – Deemed to be University",
     },
+  },
+  {
+    id: "guest-lectures",
+    title: "Guest Lectures",
+    description:
+      "A prestigious 6-day online lecture series featuring renowned IBM researchers, academic professors, and industry leaders exploring quantum theory, Qiskit algorithms, cryptography, and real-world quantum technologies.",
+    tag: "Online Lecture Series • 23-28 Nov 2026",
+    iconName: "Presentation",
+    date: "23 November 2026 to 28 November 2026",
+    mode: "Virtual Only (Online)",
+    isSchedule: true,
   },
   {
     id: "ideathon",

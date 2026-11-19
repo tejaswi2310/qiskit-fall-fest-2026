@@ -20,11 +20,11 @@ export const EventInfo = () => {
                 <span className="text-[11px] uppercase tracking-widest font-bold text-purple-300/90 mb-1">
                   WHEN
                 </span>
-                <span className="text-base sm:text-lg font-bold text-white leading-snug">
-                  {eventData.date}
+                <span className="text-sm sm:text-base font-bold text-white leading-snug">
+                  23 – 28 Nov : Online
                 </span>
-                <span className="text-xs sm:text-sm text-slate-300 mt-0.5 font-medium">
-                  {eventData.time}
+                <span className="text-sm sm:text-base font-bold text-cyan-300 mt-0.5 leading-snug">
+                  30 Nov : Offline (On-Campus)
                 </span>
               </div>
             </div>

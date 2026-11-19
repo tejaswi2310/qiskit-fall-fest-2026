@@ -28,7 +28,7 @@ export const Events = () => {
   return (
     <section id="events" className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 border-t border-purple-500/10">
       <div className="mx-auto max-w-7xl">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 rounded-full px-4 py-1 text-xs font-semibold text-[#00F0FF] bg-[#00F0FF]/10 border border-[#00F0FF]/30">
@@ -38,16 +38,105 @@ export const Events = () => {
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A78BFA] via-[#6D3BFF] to-[#38BDF8]">Events</span>
           </h2>
           <p className="text-base sm:text-lg text-slate-300">
-            Explore our curated lineup of quantum lectures, ceremonies, ideathons, and exhibitions.
+            Explore our curated lineup of quantum ceremonies, lectures, ideathons, and exhibitions.
           </p>
         </div>
 
         {/* Event Cards Container */}
         <div className="space-y-8">
 
-          {/* 1. FIRST EVENT: Guest Lectures (Full-width featured schedule card) */}
+          {/* 1. FIRST EVENT: Inauguration of Quantum Innovation Centre */}
           {(() => {
-            const guestEvent = eventCardsData.find((e) => e.id === "guest-lectures") || eventCardsData[0];
+            const inaugEvent = eventCardsData.find((e) => e.id === "inauguration") || eventCardsData[0];
+            const Icon = iconMap[inaugEvent.iconName] || Landmark;
+
+            return (
+              <div
+                key={inaugEvent.id}
+                className="group relative rounded-2xl glass-panel-glow p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-[0_15px_40px_rgba(109,59,255,0.35)] hover:border-purple-400/60 flex flex-col"
+              >
+                {/* Event Card Header */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                  <div className="flex items-center gap-4">
+                    <div className="p-4 rounded-xl bg-purple-950/60 border border-purple-500/40 text-[#00F0FF] shadow-[0_0_20px_rgba(0,240,255,0.25)] group-hover:scale-105 transition-transform duration-300 shrink-0">
+                      <Icon className="w-7 h-7" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-xs font-bold uppercase tracking-wider text-[#A78BFA]">Event 01</span>
+                        <span className="text-slate-600">•</span>
+                        <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-semibold text-purple-300 bg-purple-950/40 border border-purple-500/30">
+                          On-Campus Ceremony
+                        </span>
+                      </div>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-purple-200 transition-colors mt-1">
+                        {inaugEvent.title}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <span className="self-start sm:self-auto px-3.5 py-1.5 rounded-full text-xs font-semibold text-purple-200 bg-purple-950/60 border border-purple-500/40 shadow-sm">
+                    {inaugEvent.tag}
+                  </span>
+                </div>
+
+                {/* Event Description */}
+                <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-4xl">
+                  {inaugEvent.description}
+                </p>
+
+                {/* Key Details Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-purple-500/20">
+                  {/* Date */}
+                  {inaugEvent.date && (
+                    <div className="flex items-start gap-3 p-4 rounded-xl bg-[#0B1026]/70 border border-purple-500/20">
+                      <div className="p-2 rounded-lg bg-purple-900/40 text-[#00F0FF] shrink-0">
+                        <Calendar className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="text-slate-400 font-semibold block text-xs uppercase tracking-wider">Date</span>
+                        <span className="text-white font-bold text-sm sm:text-base">{inaugEvent.date}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Venue */}
+                  {inaugEvent.venue && (
+                    <div className="flex items-start gap-3 p-4 rounded-xl bg-[#0B1026]/70 border border-purple-500/20">
+                      <div className="p-2 rounded-lg bg-purple-900/40 text-[#00F0FF] shrink-0">
+                        <MapPin className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="text-slate-400 font-semibold block text-xs uppercase tracking-wider">Venue</span>
+                        <span className="text-white font-bold text-sm sm:text-base leading-snug">{inaugEvent.venue}</span>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Chief Guest */}
+                  {inaugEvent.chiefGuest && (
+                    <div className="flex items-start gap-3 p-4 rounded-xl bg-[#0B1026]/70 border border-purple-500/20">
+                      <div className="p-2 rounded-lg bg-purple-900/40 text-emerald-400 shrink-0">
+                        <UserCheck className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <span className="text-slate-400 font-semibold block text-xs uppercase tracking-wider">Chief Guest</span>
+                        <span className="text-white font-bold text-sm sm:text-base">{inaugEvent.chiefGuest.name}</span>
+                        <span className="text-xs text-purple-300 block mt-0.5 leading-snug">
+                          {inaugEvent.chiefGuest.designation}
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+              </div>
+            );
+          })()}
+
+          {/* 2. SECOND EVENT: Guest Lectures (Featured Schedule Card) */}
+          {(() => {
+            const guestEvent = eventCardsData.find((e) => e.id === "guest-lectures") || eventCardsData[1];
             const Icon = iconMap[guestEvent.iconName] || Presentation;
 
             return (
@@ -63,7 +152,7 @@ export const Events = () => {
                     </div>
                     <div>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-xs font-bold uppercase tracking-wider text-[#A78BFA]">Event 01</span>
+                        <span className="text-xs font-bold uppercase tracking-wider text-[#A78BFA]">Event 02</span>
                         <span className="text-slate-600">•</span>
                         <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-950/40 border border-emerald-500/30">
                           <Globe className="w-3 h-3 text-emerald-400" />
@@ -158,11 +247,11 @@ export const Events = () => {
             );
           })()}
 
-          {/* EVENTS 2, 3, 4: Inauguration, Ideathon, Project Expo in a Responsive Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {eventCardsData.slice(1).map((event, index) => {
-              const Icon = iconMap[event.iconName] || Landmark;
-              const eventNumber = `0${index + 2}`;
+          {/* EVENTS 3 & 4: Ideathon & Project Expo in a 2-Column Responsive Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {eventCardsData.slice(2).map((event, index) => {
+              const Icon = iconMap[event.iconName] || Lightbulb;
+              const eventNumber = `0${index + 3}`;
 
               return (
                 <div
@@ -243,20 +332,6 @@ export const Events = () => {
                         <div>
                           <span className="text-slate-400 font-medium block text-[11px] uppercase tracking-wider">Venue</span>
                           <span className="text-slate-200 font-medium leading-snug block">{event.venue}</span>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Chief Guest */}
-                    {event.chiefGuest && (
-                      <div className="flex items-start gap-2.5 text-xs sm:text-sm pt-1">
-                        <UserCheck className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                        <div>
-                          <span className="text-slate-400 font-medium block text-[11px] uppercase tracking-wider">Chief Guest</span>
-                          <span className="text-white font-bold block">{event.chiefGuest.name}</span>
-                          <span className="text-xs text-slate-300 leading-snug block mt-0.5">
-                            {event.chiefGuest.designation}
-                          </span>
                         </div>
                       </div>
                     )}

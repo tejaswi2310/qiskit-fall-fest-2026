@@ -52,14 +52,14 @@ export const Hero = () => {
 
 
             {/* Main Heading & Sub-caption */}
-            <div className="space-y-1">
+            <div className="space-y-1 w-full text-center">
               <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
                 Qiskit Fall Fest{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A78BFA] via-[#6D3BFF] to-[#38BDF8] drop-shadow-[0_0_40px_rgba(109,59,255,0.5)]">
                   2026
                 </span>
               </h1>
-              <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-purple-300/90 pt-1">
+              <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-purple-300/90 pt-1 text-center">
                 Weekly Celebrations
               </p>
             </div>

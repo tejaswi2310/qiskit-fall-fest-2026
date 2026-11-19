@@ -52,7 +52,7 @@ export const Footer = () => {
             <div className="pt-2 text-xs text-slate-400 space-y-1">
               <p className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-                <span>NRI Institute of Technology, Vijayawada, AP, India</span>
+                <span>Dr. RVR NRI Institute of Technology, Deemed to be University, Vijayawada, AP, India</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-purple-400 shrink-0" />
