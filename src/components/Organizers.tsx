@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { Users, Phone, Building2 } from "lucide-react";
 import { organizerTeam } from "../data/organizers";
 
@@ -23,21 +24,36 @@ export const Organizers = () => {
           </p>
         </div>
 
-        {/* 8 Organizers Grid (4 in Row 1, 4 in Row 2) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {/* Organizers Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {organizerTeam.map((organizer) => (
             <div
               key={organizer.id}
-              className="flex flex-col items-center justify-between p-6 sm:p-7 rounded-2xl bg-[#0B1026]/90 border border-purple-500/20 shadow-lg shadow-black/40 hover:border-purple-400/50 hover:-translate-y-1.5 hover:shadow-[0_12px_35px_rgba(109,59,255,0.25)] transition-all duration-300 h-full min-h-[380px]"
+              className="group flex flex-col items-center justify-between p-7 rounded-2xl bg-[#0B1026]/90 border border-purple-500/20 shadow-lg shadow-black/40 hover:border-purple-400/50 hover:-translate-y-1.5 hover:shadow-[0_12px_35px_rgba(109,59,255,0.25)] transition-all duration-300 h-full min-h-[420px]"
             >
               <div className="flex flex-col items-center w-full">
-                {/* Large Initial Letter Circle Avatar matching screenshot */}
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#4F46E5] to-[#3B82F6] flex items-center justify-center text-4xl font-black text-white shadow-xl shadow-blue-500/20 mb-5 border-2 border-indigo-400/30">
-                  {organizer.initial || organizer.name.charAt(0)}
+                {/* Large, High-Impact Avatar with Quantum Glow Ring */}
+                <div className="relative mb-6">
+                  <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-[#6D3BFF] via-[#00F0FF] to-[#A78BFA] opacity-75 blur group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-[#4F46E5] via-[#4338CA] to-[#2563EB] flex items-center justify-center text-5xl font-black text-white shadow-2xl border-2 border-indigo-300/40 overflow-hidden">
+                    {organizer.photoUrl ? (
+                      <Image
+                        src={organizer.photoUrl}
+                        alt={organizer.name}
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                      />
+                    ) : (
+                      <span className="drop-shadow-md select-none">
+                        {organizer.initial || organizer.name.charAt(0)}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 {/* Organizer Name */}
-                <h3 className="text-lg sm:text-xl font-bold text-white text-center mb-1 leading-snug">
+                <h3 className="text-lg sm:text-xl font-bold text-white text-center mb-1 leading-snug group-hover:text-purple-200 transition-colors">
                   {organizer.name}
                 </h3>
 
@@ -48,11 +64,11 @@ export const Organizers = () => {
 
                 {/* Affiliation / Status */}
                 <p className="text-xs sm:text-sm text-slate-400 text-center font-medium leading-relaxed">
-                  {organizer.affiliation || "Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY"}
+                  {organizer.affiliation || "Dr. RVR NRI Institute of Technology - Deemed to be University"}
                 </p>
               </div>
 
-              {/* Contact Info (if available, e.g. Lead Organizer) */}
+              {/* Contact Info (if available) */}
               {organizer.contact ? (
                 <div className="mt-6 pt-4 border-t border-purple-500/20 w-full text-center">
                   <p className="text-xs text-slate-400 mb-1 flex items-center justify-center gap-1">
@@ -72,8 +88,8 @@ export const Organizers = () => {
             </div>
           ))}
 
-          {/* Join the Team / Volunteer Card (from Screenshot 3) */}
-          <div className="sm:col-span-2 lg:col-span-4 flex flex-col sm:flex-row items-center justify-between p-6 sm:p-8 rounded-2xl bg-[#0B1026]/40 border-2 border-dashed border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 mt-2 gap-4 text-center sm:text-left">
+          {/* Join the Team / Volunteer Card */}
+          <div className="sm:col-span-2 lg:col-span-3 xl:col-span-4 flex flex-col sm:flex-row items-center justify-between p-6 sm:p-8 rounded-2xl bg-[#0B1026]/40 border-2 border-dashed border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 mt-2 gap-4 text-center sm:text-left">
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <div className="w-14 h-14 rounded-full bg-purple-950/60 border border-purple-500/40 flex items-center justify-center text-[#00F0FF] shadow-inner shrink-0">
                 <Users className="w-6 h-6" />
@@ -97,8 +113,6 @@ export const Organizers = () => {
           </div>
 
         </div>
-
-
 
       </div>
     </section>

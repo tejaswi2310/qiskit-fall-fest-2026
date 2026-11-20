@@ -83,7 +83,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Ms. Debarthi Pal",
     designation: "IBM Quantum Research Engineer",
     topic: "Introduction to Quantum Computing with Qiskit 101",
-    photoUrl: "/images/speakers/debarthi_pal.jpg"
+    photoUrl: "/images/speakers/cropped_debarthi_pal.jpg"
   },
   {
     day: "Day 2",
@@ -92,7 +92,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Dr. RVS Lalitha",
     designation: "Professor of CSE, Adithya University",
     topic: "Post Quantum Cryptography",
-    photoUrl: "/images/speakers/rvs_lalitha.jpg"
+    photoUrl: "/images/speakers/cropped_rvs_lalitha.jpg"
   },
   {
     day: "Day 2",
@@ -101,7 +101,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Dr. G. Jaya Suma",
     designation: "Professor of IT, Director of Academic Planning, JNTUGV",
     topic: "Research Towards Quantum Computing",
-    photoUrl: "/images/speakers/jaya_suma.jpg"
+    photoUrl: "/images/speakers/cropped_jaya_suma.jpg"
   },
   {
     day: "Day 3",
@@ -110,7 +110,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Er. Laxmikanta Sutar",
     designation: "Faculty of Quantum Science & Technology, CUTM-AP",
     topic: "Quantum Hamiltonians",
-    photoUrl: "/images/speakers/laxmikanta_sutar.jpg"
+    photoUrl: "/images/speakers/cropped_laxmikanta_sutar.jpg"
   },
   {
     day: "Day 3",
@@ -119,7 +119,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Dr. U. Pavani",
     designation: "QIC-Coordinator, RGUKT Nuzvid",
     topic: "Optimization using QAOA",
-    photoUrl: "/images/speakers/u_pavani.png"
+    photoUrl: "/images/speakers/cropped_u_pavani.png"
   },
   {
     day: "Day 4",
@@ -128,7 +128,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Mr. S V Sai Prasad",
     designation: "IBM-Project Guide, JNTUK",
     topic: "Beyond Classical Computing: Exploring Q-bits, Quantum gates and Quantum circuits using Qiskit",
-    photoUrl: "/images/speakers/sai_prasad.png"
+    photoUrl: "/images/speakers/cropped_sai_prasad.png"
   },
   {
     day: "Day 5",
@@ -137,7 +137,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Dr. Varsha Sambhaje",
     designation: "Assistant Professor, Quantum Technology, SRM University-AP",
     topic: "Applications of Quantum Technologies",
-    photoUrl: "/images/speakers/varsha_sambhaje.jpg"
+    photoUrl: "/images/speakers/cropped_varsha_sambhaje.jpg"
   },
   {
     day: "Day 6",
@@ -146,7 +146,7 @@ export const guestLecturesSchedule: GuestLectureItem[] = [
     speaker: "Mr. Naga Sai Durga Nagesh",
     designation: "Founder, MD & CTO – SIA Software Innovation Pvt Ltd",
     topic: "Quantum Key Distribution",
-    photoUrl: "/images/speakers/durga_nagesh.jpg"
+    photoUrl: "/images/speakers/cropped_durga_nagesh.jpg"
   }
 ];
 

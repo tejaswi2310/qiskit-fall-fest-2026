@@ -188,54 +188,53 @@ export const Events = () => {
                 </div>
 
                 {/* 6-Day Lecture Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                   {guestLecturesSchedule.map((item, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col justify-between p-4 sm:p-5 rounded-xl bg-[#0B1026]/80 border border-purple-500/20 hover:border-purple-400/50 hover:bg-[#0E1535]/90 transition-all duration-200 shadow-sm"
+                      className="group/speaker flex flex-col justify-between p-5 rounded-2xl bg-[#0B1026]/90 border border-purple-500/20 hover:border-purple-400/50 hover:bg-[#0E1535] transition-all duration-300 shadow-md hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(109,59,255,0.2)]"
                     >
-                      <div>
+                      <div className="flex flex-col items-center text-center">
                         {/* Day & Date Badge */}
-                        <div className="flex items-center justify-between gap-2 mb-3">
-                          <span className="px-2 py-0.5 rounded text-[11px] font-bold tracking-wider uppercase bg-purple-900/50 text-purple-200 border border-purple-500/30">
+                        <div className="w-full flex items-center justify-between gap-2 mb-4">
+                          <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase bg-purple-900/50 text-purple-200 border border-purple-500/30">
                             {item.day}
                           </span>
-                          <span className="text-xs text-slate-400 font-medium">
+                          <span className="text-xs text-slate-400 font-semibold">
                             {item.date}
                           </span>
                         </div>
 
-                        {/* Speaker Photo & Name */}
-                        <div className="flex items-center gap-3 mb-3">
-                          <div className="relative w-12 h-12 rounded-full overflow-hidden border border-purple-400/40 shrink-0 bg-purple-950/60">
-                            <Image
-                              src={item.photoUrl}
-                              alt={item.speaker}
-                              fill
-                              className="object-cover"
-                              sizes="48px"
-                            />
-                          </div>
-                          <div className="min-w-0">
-                            <h4 className="text-sm font-bold text-white truncate leading-tight">
-                              {item.speaker}
-                            </h4>
-                            <p className="text-[11px] text-purple-300/90 leading-tight line-clamp-2 mt-0.5">
-                              {item.designation}
-                            </p>
-                          </div>
+                        {/* Speaker Photo - Large & Clear Square/Rectangle Card Frame */}
+                        <div className="relative w-full aspect-square max-w-[200px] mb-4 rounded-2xl overflow-hidden border-2 border-indigo-400/40 bg-purple-950/80 shadow-lg group-hover/speaker:border-[#00F0FF]/60 transition-all duration-300">
+                          <Image
+                            src={item.photoUrl}
+                            alt={item.speaker}
+                            fill
+                            className="object-cover object-center group-hover/speaker:scale-105 transition-transform duration-300"
+                            sizes="(max-width: 768px) 100vw, 200px"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1026]/40 via-transparent to-transparent pointer-events-none" />
                         </div>
 
+                        {/* Speaker Name & Designation */}
+                        <h4 className="text-base font-bold text-white leading-snug group-hover/speaker:text-purple-200 transition-colors">
+                          {item.speaker}
+                        </h4>
+                        <p className="text-xs text-purple-300/90 leading-snug mt-1 line-clamp-2 font-medium min-h-[32px]">
+                          {item.designation}
+                        </p>
+
                         {/* Timing */}
-                        <div className="flex items-center gap-1.5 text-xs text-slate-300 mb-2 font-medium">
-                          <Clock className="w-3.5 h-3.5 text-[#00F0FF] shrink-0" />
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-xs text-[#00F0FF] my-3 font-semibold">
+                          <Clock className="w-3.5 h-3.5 shrink-0" />
                           <span>{item.time}</span>
                         </div>
 
                         {/* Topic */}
-                        <div className="pt-2 border-t border-purple-500/15">
-                          <p className="text-[11px] uppercase tracking-wider font-semibold text-slate-400 mb-0.5">Topic</p>
-                          <p className="text-xs sm:text-sm font-semibold text-white leading-snug line-clamp-3">
+                        <div className="w-full pt-3 border-t border-purple-500/20 text-left">
+                          <p className="text-[11px] uppercase tracking-wider font-bold text-slate-400 mb-1">Topic</p>
+                          <p className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug line-clamp-3">
                             {item.topic}
                           </p>
                         </div>
