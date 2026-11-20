@@ -46,8 +46,8 @@ export const organizerTeam: Organizer[] = [
     initial: "A"
   },
   {
-    id: "mrs-swathi-raparla",
-    name: "Mrs. Swathi Raparla",
+    id: "dr-swathi-raparla",
+    name: "Dr. Swathi Raparla",
     role: "Co-Organizer (Faculty)",
     affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
     contact: "+91 97030 74790",

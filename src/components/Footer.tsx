@@ -46,17 +46,17 @@ export const Footer = () => {
             </p>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
-              A university quantum festival organized by Dr. RVR NRI Institute of Technology Deemed to be University.
+              A university quantum festival organized by Dr.RVR NRIIT Quantum Innovation Cell.
             </p>
 
             <div className="pt-2 text-xs text-slate-400 space-y-1">
               <p className="flex items-center gap-2">
                 <MapPin className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-                <span>Dr. RVR NRI Institute of Technology, Deemed to be University, Vijayawada, AP, India</span>
+                <span>Dr. RVR NRI Institute of Technology, Deemed to be University, Agiripalli, AP, India</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-                <span>qiskitfest@nriit.edu.in</span>
+                <span>adilakshmi@nriit.edu.in</span>
               </p>
             </div>
           </div>

@@ -1,6 +1,6 @@
 export const eventInfo = {
   name: "Qiskit Fall Fest 2026",
-  date: "23 – 28 Nov (Online) • 30 Nov (On-Campus)",
+  date: "23-11-2026 to 28-11-2026 : Virtual Mode • 30-11-2026 : Offline (Only for In-School Participants)",
   time: "Hybrid Mode",
   location: "Dr.RVR NRI INSTITUTE OF TECHNOLOGY DEEMED TO BE UNIVERSITY",
   format: "Offline (In-Person)",

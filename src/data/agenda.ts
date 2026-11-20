@@ -35,8 +35,8 @@ export const agenda: AgendaItem[] = [
   {
     id: "inauguration",
     time: "",
-    title: "Quantum Innovation Centre Inauguration",
-    description: "Launching a new hub for quantum innovation and learning.",
+    title: "Inauguration of Qiskit Fall Fest 2026",
+    description: "Grand virtual inauguration opening the week of quantum exploration.",
     sessionType: "closing"
   }
 ];

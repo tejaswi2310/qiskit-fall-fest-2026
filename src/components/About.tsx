@@ -6,7 +6,7 @@ import { Cpu, CheckCircle2, Award, Users, Sparkles } from "lucide-react";
 
 export const About = () => {
   const highlights = [
-    { title: "Quantum Innovation", desc: "Center inauguration & cutting-edge research" },
+    { title: "Fest Inauguration", desc: "Grand opening of Qiskit Fall Fest 2026" },
     { title: "Guest Lectures", desc: "6-day lecture series by quantum computing pioneers" },
     { title: "Networking", desc: "Direct interactions with mentors & peers" },
     { title: "Open to All", desc: "No prerequisites required to get started" },

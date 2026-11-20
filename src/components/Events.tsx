@@ -45,7 +45,7 @@ export const Events = () => {
         {/* Event Cards Container */}
         <div className="space-y-8">
 
-          {/* 1. FIRST EVENT: Inauguration of Quantum Innovation Centre */}
+          {/* 1. FIRST EVENT: Inauguration of Qiskit Fall Fest 2026 */}
           {(() => {
             const inaugEvent = eventCardsData.find((e) => e.id === "inauguration") || eventCardsData[0];
             const Icon = iconMap[inaugEvent.iconName] || Landmark;
@@ -65,8 +65,9 @@ export const Events = () => {
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-xs font-bold uppercase tracking-wider text-[#A78BFA]">Event 01</span>
                         <span className="text-slate-600">•</span>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-semibold text-purple-300 bg-purple-950/40 border border-purple-500/30">
-                          On-Campus Ceremony
+                        <span className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-semibold text-emerald-300 bg-emerald-950/40 border border-emerald-500/30">
+                          <Globe className="w-3 h-3 text-emerald-400" />
+                          Virtual Mode
                         </span>
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-purple-200 transition-colors mt-1">

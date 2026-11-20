@@ -21,10 +21,10 @@ export const eventData: EventInfoType = {
   badge: "Offline Event • In-Person on Campus",
   description:
     "The premier quantum computing event for students, researchers, and enthusiasts. Whether you are a student, researcher, or developer, join us to explore the frontiers of quantum technology.",
-  date: "23 – 28 Nov (Online) • 30 Nov (On-Campus)",
+  date: "23-11-2026 to 28-11-2026 : Virtual Mode • 30-11-2026 : Offline (Only for In-School Participants)",
   time: "Hybrid Mode",
   venue: "Dr.RVR NRI Institute of Technology Deemed to be University",
-  venueFull: "Dr.RVR NRI Institute of Technology Deemed to be University, Vijayawada, Andhra Pradesh, India",
+  venueFull: "Dr.RVR NRI Institute of Technology Deemed to be University, Agiripalli, Andhra Pradesh, India",
   host: "Dr.RVR NRI Institute of Technology Deemed to be University",
   format: "Offline (In-Person)",
   targetAudience: "Students, Researchers, Developers & Quantum Enthusiasts",
@@ -40,9 +40,9 @@ export interface FeatureType {
 
 export const featuresData: FeatureType[] = [
   {
-    id: "innovation",
-    title: "Quantum Innovation",
-    description: "Inauguration of the Quantum Innovation Centre and breakthrough research facilities.",
+    id: "inauguration",
+    title: "Fest Inauguration",
+    description: "Grand virtual inauguration of Qiskit Fall Fest 2026 opening a week of quantum exploration.",
     iconName: "GraduationCap",
   },
   {
@@ -175,16 +175,16 @@ export interface EventCardType {
 export const eventCardsData: EventCardType[] = [
   {
     id: "inauguration",
-    title: "Inauguration of Quantum Innovation Centre",
+    title: "Inauguration of Qiskit Fall Fest 2026",
     description:
-      "Official inauguration of the state-of-the-art Quantum Innovation Centre at Dr. RVR & NRI Institute of Technology, marking a transformative leap in quantum computing education, cutting-edge research, and industry collaboration.",
-    tag: "Campus Inauguration",
+      "Official virtual inauguration of Qiskit Fall Fest 2026 hosted by Dr.RVR NRI Institute of Technology Deemed to be University, marking a transformative leap in quantum computing education, cutting-edge research, and student innovation.",
+    tag: "Virtual Inauguration",
     iconName: "Landmark",
-    date: "23 November 2026",
-    venue: "Dr. RVR & NRI Institute of Technology (University Campus)",
+    date: "23-11-2026",
+    venue: "Virtual Mode",
     chiefGuest: {
       name: "Dr. Raavi Venkata Rao",
-      designation: "Chancellor, Dr. RVR & NRI Institute of Technology – Deemed to be University",
+      designation: "Chancellor, Dr.RVR NRI Institute of Technology – Deemed to be University",
     },
   },
   {
@@ -212,8 +212,8 @@ export const eventCardsData: EventCardType[] = [
     id: "project-expo",
     title: "Project Expo",
     description:
-      "An exclusive platform designed to showcase creative quantum science, hardware prototypes, and computing projects built by budding young minds.",
-    tag: "School Level Showcase",
+      "An exclusive platform designed to showcase creative quantum science, hardware prototypes, and computing projects built by budding young minds of Dr.RVR NRIIT Deemed to be University.",
+    tag: "In-School Level Showcase",
     iconName: "Sparkles",
     date: "30 November 2026",
     eligibility: "Only for In-School Students",
@@ -354,7 +354,7 @@ export const faqData: FAQItemType[] = [
   {
     question: "What is Qiskit Fall Fest 2026?",
     answer:
-      "Qiskit Fall Fest 2026 is a university-hosted quantum computing festival organized by Dr. RVR NRI Institute of Technology Deemed to be University in partnership with the global Qiskit community. It features a 6-day online guest lecture series, the inauguration of the Quantum Innovation Centre, an online Ideathon, and an in-person school Project Expo.",
+      "Qiskit Fall Fest 2026 is a university-hosted quantum computing festival organized by Dr.RVR NRI Institute of Technology Deemed to be University in partnership with the global Qiskit community. It features a virtual inauguration, a 6-day online guest lecture series, an online Ideathon, and an in-person school Project Expo.",
   },
   {
     question: "Who can attend?",
@@ -379,12 +379,12 @@ export const faqData: FAQItemType[] = [
   {
     question: "Is the event online or offline?",
     answer:
-      "Qiskit Fall Fest 2026 is conducted in a **Hybrid Mode** featuring both virtual and in-person events:\n\n• **Online Events (Virtual Only):** The **6-Day Guest Lecture Series** (23–28 November 2026) featuring global researchers & experts, and the **Ideathon** (28 November 2026) are conducted virtually online.\n\n• **Offline Events (On-Campus):** The **Inauguration of the Quantum Innovation Centre** (23 November 2026) and the **Project Expo** (30 November 2026, for in-school students) are held in-person on campus at Dr. RVR NRI Institute of Technology Deemed to be University.",
+      "Qiskit Fall Fest 2026 is conducted in a **Hybrid Mode** featuring both virtual and in-person events:\n\n• **Online Events (Virtual Only):** The **Inauguration of Qiskit Fall Fest 2026** (23-11-2026), the **6-Day Guest Lecture Series** (23–28 November 2026) featuring global researchers & experts, and the **Ideathon** (28 November 2026) are conducted virtually online.\n\n• **Offline Events (On-Campus):** The **Project Expo** (30 November 2026, for in-school students) is held in-person on campus at Dr.RVR NRI Institute of Technology Deemed to be University.",
   },
   {
     question: "Where will the in-person events be held?",
     answer:
-      "The on-campus sessions will take place at the University Campus & Quantum Innovation Centre, Dr. RVR NRI Institute of Technology Deemed to be University, Vijayawada, Andhra Pradesh.",
+      "The on-campus sessions will take place at the University Campus, Dr.RVR NRI Institute of Technology Deemed to be University, Agiripalli, Andhra Pradesh.",
   },
   {
     question: "How can I register?",
