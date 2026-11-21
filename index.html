@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qiskit Fall Fest 2026 | Learn • Build • Explore Quantum Computing</title>
+  <meta name="description" content="Official website for Qiskit Fall Fest 2026 hosted by Dr. RVR NRI Institute of Technology Deemed to be University. Guest lecture series, fest inauguration, school project expo, and ideathon.">
+  <meta name="keywords" content="Qiskit Fall Fest 2026, quantum computing event, Qiskit event, quantum computing student event, IBM Quantum">
+  <meta name="theme-color" content="#050816">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Qiskit Fall Fest 2026">
+  <meta property="og:description" content="Join us for Qiskit Fall Fest 2026, a quantum computing event featuring learning, building, and exploration with Qiskit.">
+  <meta property="og:site_name" content="Qiskit Fall Fest 2026">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Qiskit Fall Fest 2026">
+  <meta name="twitter:description" content="Join us for Qiskit Fall Fest 2026, a quantum computing event featuring learning, building, and exploration with Qiskit.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Background Quantum Stars, Canvas & Glows
+       ========================================================================= -->
+  <div class="quantum-bg-wrapper" aria-hidden="true">
+    <canvas id="quantum-canvas"></canvas>
+    <div class="bg-radial-glow bg-glow-1"></div>
+    <div class="bg-radial-glow bg-glow-2"></div>
+    <div class="bg-radial-glow bg-glow-3"></div>
+    <div class="bg-grid-overlay"></div>
+  </div>
+
+  <!-- =========================================================================
+       Header / Sticky Navigation Bar
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Left Side: Brand Logo & Title -->
+      <a href="#" class="brand-link" aria-label="Qiskit Fall Fest 2026 Home">
+        <div class="brand-logo-box">
+          <img src="assets/images/nri-logo.png" alt="NRI University" class="brand-logo-img">
+        </div>
+        <div class="brand-title">
+          <span class="brand-name">Qiskit Fall Fest</span>
+          <span class="brand-year gradient-text">2026</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#organizers" class="nav-link">Organizers</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Right Side: CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="https://forms.gle/yk7iLvmrkzb1MuZf9" target="_blank" rel="noopener noreferrer" class="btn-register-nav">
+          <span>Register</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+          <svg id="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation">
+      <div class="mobile-links">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#events" class="mobile-link">Events</a>
+        <a href="#organizers" class="mobile-link">Organizers</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="https://forms.gle/yk7iLvmrkzb1MuZf9" target="_blank" rel="noopener noreferrer" class="btn-register-mobile">
+          <span>Register Now</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Content
+       ========================================================================= -->
+  <main>
+
+    <!-- -----------------------------------------------------------------------
+         Hero Section
+         ----------------------------------------------------------------------- -->
+    <section class="hero-section">
+      <!-- Wave stream backdrop -->
+      <div class="wave-backdrop" aria-hidden="true">
+        <svg class="wave-svg" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,192L60,181.3C120,171,240,149,360,165.3C480,181,600,235,720,240C840,245,960,203,1080,170.7C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" fill="url(#waveGrad1)" fill-opacity="0.15"></path>
+          <path d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,234.7C672,245,768,235,864,208C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224" stroke="url(#waveStroke1)" stroke-width="1.5" stroke-opacity="0.4"></path>
+          <defs>
+            <linearGradient id="waveGrad1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#6D3BFF"></stop>
+              <stop offset="50%" stop-color="#315CFF"></stop>
+              <stop offset="100%" stop-color="#00F0FF"></stop>
+            </linearGradient>
+            <linearGradient id="waveStroke1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#A855F7"></stop>
+              <stop offset="50%" stop-color="#6D3BFF"></stop>
+              <stop offset="100%" stop-color="#00F0FF"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="hero-grid">
+          <!-- Left Column: Content -->
+          <div class="hero-content">
+            <div class="hero-heading-box">
+              <h1 class="hero-title">
+                Qiskit Fall Fest <span class="gradient-text drop-shadow-glow">2026</span>
+              </h1>
+              <p class="hero-subcaption">Weekly Celebrations</p>
+            </div>
+
+            <!-- Tagline -->
+            <p class="hero-tagline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+              </svg>
+              <span>Learn • Build • Explore Quantum Computing</span>
+            </p>
+
+            <!-- Description -->
+            <p class="hero-desc">
+              The premier quantum computing event for students, researchers, and enthusiasts. Whether you are a student, researcher, or developer, join us to explore the frontiers of quantum technology.
+            </p>
+
+            <!-- CTAs -->
+            <div class="hero-cta-group">
+              <a href="https://forms.gle/yk7iLvmrkzb1MuZf9" target="_blank" rel="noopener noreferrer" class="btn-primary-glow">
+                <span>Register Now</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#events" class="btn-secondary-glass">
+                <span>Explore Events</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Showcase -->
+          <div class="hero-visual">
+            <!-- 3D Quantum Sphere Wireframe positioned behind the building card -->
+            <div class="sphere-backdrop" aria-hidden="true">
+              <div style="position: relative; width: 280px; height: 280px;" class="animate-float">
+                <!-- Radiant Ambient Aura -->
+                <div style="position: absolute; inset: 0.5rem; border-radius: 50%; background: linear-gradient(to top right, rgba(109,59,255,0.35), rgba(49,92,255,0.25), rgba(0,240,255,0.35)); filter: blur(32px); z-index: -1;" class="animate-pulse-slow"></div>
+
+                <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; filter: drop-shadow(0 0 28px rgba(109,59,255,0.8)) drop-shadow(0 0 12px rgba(0,240,255,0.6));">
+                  <defs>
+                    <radialGradient id="qCoreGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4"></stop>
+                      <stop offset="50%" stop-color="#4C1D95" stop-opacity="0.2"></stop>
+                      <stop offset="85%" stop-color="#1E0E4D" stop-opacity="0.08"></stop>
+                      <stop offset="100%" stop-color="#050816" stop-opacity="0"></stop>
+                    </radialGradient>
+                    <linearGradient id="solidRingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#D946EF"></stop>
+                      <stop offset="35%" stop-color="#A855F7"></stop>
+                      <stop offset="70%" stop-color="#38BDF8"></stop>
+                      <stop offset="100%" stop-color="#00F0FF"></stop>
+                    </linearGradient>
+                    <filter id="nodeCyanGlow" x="-100%" y="-100%" width="300%" height="300%">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1"></feGaussianBlur>
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"></feGaussianBlur>
+                      <feMerge>
+                        <feMergeNode in="blur2"></feMergeNode>
+                        <feMergeNode in="blur1"></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                      </feMerge>
+                    </filter>
+                    <filter id="nodePurpleGlow" x="-100%" y="-100%" width="300%" height="300%">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1"></feGaussianBlur>
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"></feGaussianBlur>
+                      <feMerge>
+                        <feMergeNode in="blur2"></feMergeNode>
+                        <feMergeNode in="blur1"></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                      </feMerge>
+                    </filter>
+                    <filter id="singularityGlow" x="-150%" y="-150%" width="400%" height="400%">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1"></feGaussianBlur>
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur2"></feGaussianBlur>
+                      <feMerge>
+                        <feMergeNode in="blur2"></feMergeNode>
+                        <feMergeNode in="blur1"></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                      </feMerge>
+                    </filter>
+                    <filter id="lineGlow">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur"></feGaussianBlur>
+                      <feMerge>
+                        <feMergeNode in="blur"></feMergeNode>
+                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                      </feMerge>
+                    </filter>
+                  </defs>
+
+                  <!-- 1. Core Sphere Body -->
+                  <circle cx="150" cy="150" r="76" fill="url(#qCoreGlow)"></circle>
+
+                  <!-- 2. Wireframe Central Sphere Longitude & Latitude -->
+                  <g filter="url(#lineGlow)">
+                    <ellipse cx="150" cy="150" rx="36" ry="76" stroke="#00F0FF" stroke-width="1.6" stroke-dasharray="6 4" stroke-opacity="0.8"></ellipse>
+                    <ellipse cx="150" cy="150" rx="64" ry="76" stroke="#A855F7" stroke-width="1.6" stroke-dasharray="6 4" stroke-opacity="0.7"></ellipse>
+                    <ellipse cx="150" cy="150" rx="76" ry="36" stroke="#00F0FF" stroke-width="1.6" stroke-dasharray="6 4" stroke-opacity="0.75"></ellipse>
+                    <ellipse cx="150" cy="150" rx="76" ry="62" stroke="#A855F7" stroke-width="1.6" stroke-dasharray="6 4" stroke-opacity="0.65"></ellipse>
+                    <circle cx="150" cy="150" r="76" stroke="#C084FC" stroke-width="1.4" stroke-opacity="0.45"></circle>
+                  </g>
+
+                  <!-- 3. Orbiting Rings -->
+                  <!-- Ring A: Dashed Cyan Ring -->
+                  <g transform="rotate(-38 150 150)" filter="url(#lineGlow)">
+                    <ellipse cx="150" cy="150" rx="132" ry="52" stroke="#00F0FF" stroke-width="2.2" stroke-dasharray="8 5" stroke-opacity="0.9"></ellipse>
+                  </g>
+
+                  <!-- Ring B: Dashed Purple Ring -->
+                  <g transform="rotate(-70 150 150)" filter="url(#lineGlow)">
+                    <ellipse cx="150" cy="150" rx="128" ry="48" stroke="#C084FC" stroke-width="2" stroke-dasharray="8 5" stroke-opacity="0.8"></ellipse>
+                  </g>
+
+                  <!-- Ring C: Solid Purple Ring -->
+                  <g transform="rotate(-16 150 150)">
+                    <ellipse cx="150" cy="150" rx="58" ry="125" stroke="#A855F7" stroke-width="2.6" stroke-opacity="0.95" filter="url(#lineGlow)"></ellipse>
+                    <circle cx="195" cy="55" r="8" fill="#C084FC" filter="url(#nodePurpleGlow)"></circle>
+                    <circle cx="195" cy="55" r="3.5" fill="#FFFFFF"></circle>
+                    <circle cx="150" cy="275" r="7.5" fill="#00F0FF" filter="url(#nodeCyanGlow)"></circle>
+                    <circle cx="150" cy="275" r="3.5" fill="#FFFFFF"></circle>
+                  </g>
+
+                  <!-- Ring D: Solid Gradient Ring -->
+                  <g transform="rotate(25 150 150)">
+                    <ellipse cx="150" cy="150" rx="130" ry="48" stroke="url(#solidRingGrad)" stroke-width="2.8" stroke-opacity="0.95" filter="url(#lineGlow)"></ellipse>
+                    <circle cx="280" cy="150" r="8.5" fill="#00F0FF" filter="url(#nodeCyanGlow)"></circle>
+                    <circle cx="280" cy="150" r="4" fill="#FFFFFF"></circle>
+                    <circle cx="20" cy="150" r="7.5" fill="#D946EF" filter="url(#nodePurpleGlow)"></circle>
+                    <circle cx="20" cy="150" r="3" fill="#FFFFFF"></circle>
+                    <circle cx="75" cy="185" r="6.5" fill="#00F0FF" filter="url(#nodeCyanGlow)"></circle>
+                    <circle cx="75" cy="185" r="2.5" fill="#FFFFFF"></circle>
+                  </g>
+
+                  <!-- 4. Center Singularity -->
+                  <circle cx="150" cy="150" r="6.5" fill="#FFFFFF" filter="url(#singularityGlow)"></circle>
+                  <circle cx="150" cy="150" r="3.5" fill="#FFFFFF"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <!-- University Tagline Quote in Top Right -->
+            <div class="hero-quote-badge" aria-hidden="true">
+              <p>“Innovating Today</p>
+              <p>for a Brighter Tomorrow”</p>
+              <div class="hero-quote-bar"></div>
+            </div>
+
+            <!-- College Photograph Container -->
+            <div class="hero-image-card">
+              <img src="assets/images/nri-building.jpg" alt="Dr. RVR NRI Institute of Technology Campus Building" class="hero-img">
+              <div class="hero-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         Event Info Section (WHEN / HOSTED BY)
+         ----------------------------------------------------------------------- -->
+    <section class="event-info-section">
+      <div class="container max-w-6xl">
+        <div class="info-card-inner glass-panel-glow">
+          <div class="info-grid">
+            <!-- Column 1: WHEN -->
+            <div class="info-col-when">
+              <div class="info-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="info-text-group">
+                <span class="info-label">WHEN</span>
+                <span class="info-value-title">23-11-2026 to 28-11-2026 : Virtual Mode</span>
+                <div class="info-subrow">
+                  <span class="info-cyan-highlight">30-11-2026 : Offline</span>
+                  <span class="info-subtext">(Only for In-School Participants)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: HOSTED BY -->
+            <div class="info-col-hosted">
+              <div class="info-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="info-text-group">
+                <span class="info-label">HOSTED BY</span>
+                <span class="info-value-title">Dr.RVR NRI Institute of Technology</span>
+                <span class="info-subtext" style="color: rgba(233, 213, 255, 0.8);">Deemed to be University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         Feature Cards (3 Columns)
+         ----------------------------------------------------------------------- -->
+    <section class="features-section">
+      <div class="container">
+        <!-- 3 Feature Cards Grid -->
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box feature-icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Guest Lectures</h3>
+            <p class="feature-desc">Insights from quantum computing leaders and researchers.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box feature-icon-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Networking</h3>
+            <p class="feature-desc">Connect with peers, mentors and industry experts.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card glass-panel">
+            <div class="feature-icon-box feature-icon-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="9" y1="18" x2="15" y2="18"></line>
+                <line x1="10" y1="22" x2="14" y2="22"></line>
+                <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Open to All</h3>
+            <p class="feature-desc">Students, researchers, developers and enthusiasts.</p>
+          </div>
+        </div>
+
+        <!-- Motivational Divider -->
+        <div class="motivational-divider" aria-hidden="true">
+          <div class="divider-line-left"></div>
+          <span class="divider-text">Quantum Ideas Today for a Smarter Tomorrow</span>
+          <div class="divider-line-right"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         About Section
+         ----------------------------------------------------------------------- -->
+    <section id="about" class="section-bordered">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Visual Showcase -->
+          <div class="about-visual">
+            <div class="about-showcase-card glass-panel-glow">
+              <div class="about-image-wrapper">
+                <img src="assets/images/nri-building.jpg" alt="NRI Institute of Technology Campus" class="about-img">
+                <div class="about-img-gradient"></div>
+
+                <!-- Overlay Badge -->
+                <div class="about-badge-overlay">
+                  <div class="badge-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                      <rect x="9" y="9" width="6" height="6"></rect>
+                      <line x1="9" y1="1" x2="9" y2="4"></line>
+                      <line x1="15" y1="1" x2="15" y2="4"></line>
+                      <line x1="9" y1="20" x2="9" y2="23"></line>
+                      <line x1="15" y1="20" x2="15" y2="23"></line>
+                      <line x1="20" y1="9" x2="23" y2="9"></line>
+                      <line x1="20" y1="14" x2="23" y2="14"></line>
+                      <line x1="1" y1="9" x2="4" y2="9"></line>
+                      <line x1="1" y1="14" x2="4" y2="14"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="badge-title">NRI University Campus</h4>
+                    <p class="badge-subtitle">Hub of Quantum Innovation & Research</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accent Floating Mini Qiskit Logo -->
+            <div class="about-spinning-logo animate-float" aria-hidden="true">
+              <div class="spinning-logo-box">
+                <img src="assets/images/qiskit-logo.png" alt="Qiskit Logo" class="animate-spin-slow" style="width: 80px; height: 80px; object-fit: contain;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Text & Highlights -->
+          <div class="about-content">
+            <div class="section-pill-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>Event Overview</span>
+            </div>
+
+            <h2 class="section-heading">
+              About Qiskit Fall Fest <span class="gradient-text">2026</span>
+            </h2>
+
+            <p class="section-subheading-lead">
+              A premier platform to learn, build, and explore the possibilities of quantum computing with IBM Qiskit.
+            </p>
+
+            <p class="section-body-text">
+              Qiskit Fall Fest 2026 brings together students, researchers, developers, and industry experts to share knowledge, build foundational skills, and collaborate on real-world quantum computing challenges. Hosted by Dr. RVR NRI Institute of Technology Deemed to be University, this in-person festival opens doors to the quantum technology revolution for minds of every background.
+            </p>
+
+            <!-- 4 Feature Highlights Grid -->
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <div>
+                  <h4 class="highlight-title">Fest Inauguration</h4>
+                  <p class="highlight-desc">Grand opening of Qiskit Fall Fest 2026</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <div>
+                  <h4 class="highlight-title">Guest Lectures</h4>
+                  <p class="highlight-desc">6-day lecture series by quantum computing pioneers</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <div>
+                  <h4 class="highlight-title">Networking</h4>
+                  <p class="highlight-desc">Direct interactions with mentors & peers</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <svg class="highlight-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <div>
+                  <h4 class="highlight-title">Open to All</h4>
+                  <p class="highlight-desc">No prerequisites required to get started</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Callout -->
+            <div class="about-callout-card glass-panel">
+              <div class="callout-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="callout-title">Be Part of the Quantum Revolution</h4>
+                <p class="callout-desc">Connect, learn, and explore the technologies shaping the future of computing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         Events Section
+         ----------------------------------------------------------------------- -->
+    <section id="events" class="section-bordered">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-centered">
+          <div>
+            <span class="section-pill-badge pill-cyan">Sessions & Tracks</span>
+          </div>
+          <h2 class="section-heading">
+            Our <span class="gradient-text">Events</span>
+          </h2>
+          <p class="section-subtitle-lead">
+            Explore our curated lineup of quantum ceremonies, lectures, ideathons, and exhibitions.
+          </p>
+        </div>
+
+        <!-- Stack of Event Cards -->
+        <div class="events-stack">
+
+          <!-- 1. EVENT 01: Inauguration of Qiskit Fall Fest 2026 -->
+          <div class="event-featured-card glass-panel-glow">
+            <div class="event-card-top">
+              <div class="event-top-left">
+                <div class="event-icon-badge">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="22" x2="21" y2="22"></line>
+                    <line x1="6" y1="18" x2="6" y2="11"></line>
+                    <line x1="10" y1="18" x2="10" y2="11"></line>
+                    <line x1="14" y1="18" x2="14" y2="11"></line>
+                    <line x1="18" y1="18" x2="18" y2="11"></line>
+                    <polygon points="12 2 20 7 4 7"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <div class="event-tagline-row">
+                    <span class="event-number-label">Event 01</span>
+                    <span style="color: #64748B;">•</span>
+                    <span class="event-mode-badge-green">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                      </svg>
+                      Virtual Mode
+                    </span>
+                  </div>
+                  <h3 class="event-title-h3">Inauguration of Qiskit Fall Fest 2026</h3>
+                </div>
+              </div>
+              <span class="event-tag-pill">Virtual Inauguration</span>
+            </div>
+
+            <p class="event-desc-p">
+              Official virtual inauguration of Qiskit Fall Fest 2026 hosted by Dr.RVR NRI Institute of Technology Deemed to be University, marking a transformative leap in quantum computing education, cutting-edge research, and student innovation.
+            </p>
+
+            <div class="event-details-grid">
+              <div class="event-meta-card">
+                <div class="meta-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Date</span>
+                  <span class="meta-val">23-11-2026</span>
+                </div>
+              </div>
+
+              <div class="event-meta-card">
+                <div class="meta-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Venue</span>
+                  <span class="meta-val">Virtual Mode</span>
+                </div>
+              </div>
+
+              <div class="event-meta-card">
+                <div class="meta-icon-box meta-icon-green">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <polyline points="16 11 18 13 22 9"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="meta-label">Chief Guest</span>
+                  <span class="meta-val">Dr. Raavi Venkata Rao</span>
+                  <span class="meta-sub-val">Chancellor, Dr.RVR NRI Institute of Technology – Deemed to be University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. EVENT 02: Guest Lectures (6-Day Featured Schedule) -->
+          <div class="event-featured-card glass-panel-glow">
+            <div class="event-card-top">
+              <div class="event-top-left">
+                <div class="event-icon-badge">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div>
+                  <div class="event-tagline-row">
+                    <span class="event-number-label">Event 02</span>
+                    <span style="color: #64748B;">•</span>
+                    <span class="event-mode-badge-green">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                      </svg>
+                      Virtual Only (Online)
+                    </span>
+                  </div>
+                  <h3 class="event-title-h3">Guest Lectures</h3>
+                </div>
+              </div>
+              <span class="event-tag-pill">Online Lecture Series • 23-28 Nov 2026</span>
+            </div>
+
+            <p class="event-desc-p">
+              A prestigious 6-day online lecture series featuring renowned IBM researchers, academic professors, and industry leaders exploring quantum theory, Qiskit algorithms, cryptography, and real-world quantum technologies.
+            </p>
+
+            <!-- Subheading for Schedule -->
+            <div class="schedule-subheader-bar">
+              <div class="schedule-title-row">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>Six-Day Online Guest Lecture Programme Schedule</span>
+              </div>
+              <span class="schedule-date-span">23-11-2026 to 28-11-2026</span>
+            </div>
+
+            <!-- 8 Speakers Grid -->
+            <div class="speakers-grid-4">
+
+              <!-- Speaker 1 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 1</span>
+                    <span class="date-text">23-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_debarthi_pal.jpg" alt="Ms. Debarthi Pal" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Ms. Debarthi Pal</h4>
+                  <p class="speaker-designation">IBM Quantum Research Engineer</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>1:30 PM to 2:30 PM</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Introduction to Quantum Computing with Qiskit 101</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 2 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 2</span>
+                    <span class="date-text">24-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_rvs_lalitha.jpg" alt="Dr. RVS Lalitha" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Dr. RVS Lalitha</h4>
+                  <p class="speaker-designation">Professor of CSE, Adithya University</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>10:00 AM to 11:00 AM</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Post Quantum Cryptography</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 3 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 2</span>
+                    <span class="date-text">24-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_jaya_suma.jpg" alt="Dr. G. Jaya Suma" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Dr. G. Jaya Suma</h4>
+                  <p class="speaker-designation">Professor of IT, Director of Academic Planning, JNTUGV</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>1:30 PM to 2:30 PM</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Research Towards Quantum Computing</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 4 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 3</span>
+                    <span class="date-text">25-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_laxmikanta_sutar.jpg" alt="Er. Laxmikanta Sutar" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Er. Laxmikanta Sutar</h4>
+                  <p class="speaker-designation">Faculty of Quantum Science & Technology, CUTM-AP</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>10:30 AM to 11:30 AM</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Quantum Hamiltonians</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 5 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 3</span>
+                    <span class="date-text">25-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_u_pavani.png" alt="Dr. U. Pavani" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Dr. U. Pavani</h4>
+                  <p class="speaker-designation">QIC-Coordinator, RGUKT Nuzvid</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>11:45 AM to 12:45 PM</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Optimization using QAOA</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 6 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 4</span>
+                    <span class="date-text">26-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_sai_prasad.png" alt="Mr. S V Sai Prasad" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Mr. S V Sai Prasad</h4>
+                  <p class="speaker-designation">IBM-Project Guide, JNTUK</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>1:30 PM to 2:30 PM</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Beyond Classical Computing: Exploring Q-bits, Quantum gates and Quantum circuits using Qiskit</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 7 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 5</span>
+                    <span class="date-text">27-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_varsha_sambhaje.jpg" alt="Dr. Varsha Sambhaje" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Dr. Varsha Sambhaje</h4>
+                  <p class="speaker-designation">Assistant Professor, Quantum Technology, SRM University-AP</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>11:00 AM to 12:00 Noon</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Applications of Quantum Technologies</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Speaker 8 -->
+              <div class="speaker-card-single">
+                <div class="speaker-top-col">
+                  <div class="speaker-day-badge-row">
+                    <span class="day-badge">Day 6</span>
+                    <span class="date-text">28-11-2026</span>
+                  </div>
+                  <div class="speaker-photo-frame">
+                    <img src="assets/images/speakers/cropped_durga_nagesh.jpg" alt="Mr. Naga Sai Durga Nagesh" class="speaker-photo-img">
+                    <div class="speaker-photo-overlay"></div>
+                  </div>
+                  <h4 class="speaker-name">Mr. Naga Sai Durga Nagesh</h4>
+                  <p class="speaker-designation">Founder, MD & CTO – SIA Software Innovation Pvt Ltd</p>
+                  <div class="timing-badge-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>11:00 AM to 12:00 Noon</span>
+                  </div>
+                  <div class="speaker-topic-box">
+                    <p class="topic-label">Topic</p>
+                    <p class="topic-val">Quantum Key Distribution</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3 & 4. EVENTS 03 & 04 (2-Column Responsive Grid) -->
+          <div class="events-duo-grid">
+            <!-- Event 03: Ideathon -->
+            <div class="event-half-card glass-panel-glow">
+              <div>
+                <div class="event-card-top-duo">
+                  <div class="event-icon-badge">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="9" y1="18" x2="15" y2="18"></line>
+                      <line x1="10" y1="22" x2="14" y2="22"></line>
+                      <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                    </svg>
+                  </div>
+                  <span class="event-tag-pill">Online Competition</span>
+                </div>
+                <div class="event-step-num">Event 03</div>
+                <h3 class="event-duo-title">Ideathon</h3>
+                <p class="event-duo-desc">
+                  Brainstorm, collaborate, and design innovative quantum computing applications and algorithm concepts to tackle real-world global challenges using Qiskit.
+                </p>
+              </div>
+
+              <div class="event-half-meta">
+                <div class="meta-line-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <div>
+                    <span class="meta-item-label">Date</span>
+                    <span class="meta-item-val">28 November 2026</span>
+                  </div>
+                </div>
+
+                <div class="meta-line-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                  <div>
+                    <span class="meta-item-label">Mode</span>
+                    <span class="badge-tag-cyan">Virtual Only</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Event 04: Project Expo -->
+            <div class="event-half-card glass-panel-glow">
+              <div>
+                <div class="event-card-top-duo">
+                  <div class="event-icon-badge">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                    </svg>
+                  </div>
+                  <span class="event-tag-pill">In-School Level Showcase</span>
+                </div>
+                <div class="event-step-num">Event 04</div>
+                <h3 class="event-duo-title">Project Expo</h3>
+                <p class="event-duo-desc">
+                  An exclusive platform designed to showcase creative quantum science, hardware prototypes, and computing projects built by budding young minds of Dr.RVR NRIIT Deemed to be University.
+                </p>
+              </div>
+
+              <div class="event-half-meta">
+                <div class="meta-line-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <div>
+                    <span class="meta-item-label">Date</span>
+                    <span class="meta-item-val">30 November 2026</span>
+                  </div>
+                </div>
+
+                <div class="meta-line-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                  <div>
+                    <span class="meta-item-label">Eligibility</span>
+                    <span class="badge-tag-amber">Only for In-School Students</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         Organizers Section
+         ----------------------------------------------------------------------- -->
+    <section id="organizers" class="section-bordered">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header-centered">
+          <div>
+            <span class="section-pill-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 10h4"></path>
+                <path d="M10 14h4"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+              <span>Event Leadership</span>
+            </span>
+          </div>
+          <h2 class="section-heading">
+            Meet the <span class="gradient-text">Organizers</span>
+          </h2>
+          <p class="section-subtitle-lead">
+            The dedicated local leadership team bringing Qiskit Fall Fest 2026 to life.
+          </p>
+        </div>
+
+        <!-- Organizers Grid (6 Faculty + 7 Students) -->
+        <div class="organizers-grid">
+
+          <!-- 1. Dr. Adilakshmi Gorantla -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">A</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Dr. Adilakshmi Gorantla</h3>
+              <p class="organizer-role-label">Lead Organizer (Faculty)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div class="organizer-contact-box">
+              <p class="contact-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Contact</span>
+              </p>
+              <a href="tel:+919985398080" class="contact-phone-link">+91 99853 98080</a>
+            </div>
+          </div>
+
+          <!-- 2. Dr. Shobana Gorintla -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">S</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Dr. Shobana Gorintla</h3>
+              <p class="organizer-role-label">Co-Organizer (Faculty)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div class="organizer-contact-box">
+              <p class="contact-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Contact</span>
+              </p>
+              <a href="tel:+918985423344" class="contact-phone-link">+91 89854 23344</a>
+            </div>
+          </div>
+
+          <!-- 3. Mrs. Aruna Vipparla -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">A</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Mrs. Aruna Vipparla</h3>
+              <p class="organizer-role-label">Co-Organizer (Faculty)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div class="organizer-contact-box">
+              <p class="contact-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Contact</span>
+              </p>
+              <a href="tel:+919000982182" class="contact-phone-link">+91 90009 82182</a>
+            </div>
+          </div>
+
+          <!-- 4. Dr. Swathi Raparla -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">S</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Dr. Swathi Raparla</h3>
+              <p class="organizer-role-label">Co-Organizer (Faculty)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div class="organizer-contact-box">
+              <p class="contact-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Contact</span>
+              </p>
+              <a href="tel:+919703074790" class="contact-phone-link">+91 97030 74790</a>
+            </div>
+          </div>
+
+          <!-- 5. Mr. B. Phanindra Kumar -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">B</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Mr. B. Phanindra Kumar</h3>
+              <p class="organizer-role-label">Co-Organizer (Faculty)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div class="organizer-contact-box">
+              <p class="contact-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Contact</span>
+              </p>
+              <a href="tel:+919014260174" class="contact-phone-link">+91 90142 60174</a>
+            </div>
+          </div>
+
+          <!-- 6. Dr. J. Naga Surekha -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">J</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Dr. J. Naga Surekha</h3>
+              <p class="organizer-role-label">Co-Organizer (Faculty)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div class="organizer-contact-box">
+              <p class="contact-label">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Contact</span>
+              </p>
+              <a href="tel:+918374962918" class="contact-phone-link">+91 83749 62918</a>
+            </div>
+          </div>
+
+          <!-- 7. Gelli Tejaswi Venkata Aparna -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">G</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Gelli Tejaswi Venkata Aparna</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+          <!-- 8. Shaik Munthaz -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">S</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Shaik Munthaz</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+          <!-- 9. K. Naga Surendra -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">K</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">K. Naga Surendra</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+          <!-- 10. K. Sreevarshini -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">K</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">K. Sreevarshini</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI INSTITUTE OF TECHNOLOGY - DEEMED TO BE UNIVERSITY</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+          <!-- 11. Atchutha Teja Bharathi -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">A</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Atchutha Teja Bharathi</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+          <!-- 12. Kadali Raghava Satya Sai Rajesh -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">K</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Kadali Raghava Satya Sai Rajesh</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+          <!-- 13. Peketi Hemanth Kumar -->
+          <div class="organizer-card">
+            <div class="organizer-content-top">
+              <div class="avatar-ring-container">
+                <div class="avatar-blur-aura"></div>
+                <div class="avatar-core-circle">
+                  <span class="avatar-initial-text">P</span>
+                </div>
+              </div>
+              <h3 class="organizer-name">Peketi Hemanth Kumar</h3>
+              <p class="organizer-role-label">Co-Organizer (Student)</p>
+              <p class="organizer-affiliation">Dr. RVR NRI Institute of Technology - Deemed to be University</p>
+            </div>
+            <div style="margin-top: 1rem;"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         FAQ Section
+         ----------------------------------------------------------------------- -->
+    <section id="faq" class="section-bordered">
+      <div class="container max-w-4xl">
+        <!-- Header -->
+        <div class="section-header-centered">
+          <div>
+            <span class="section-pill-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              <span>Got Questions?</span>
+            </span>
+          </div>
+          <h2 class="section-heading">
+            Frequently Asked <span class="gradient-text">Questions</span>
+          </h2>
+          <p class="section-subtitle-lead">
+            Everything you need to know about participation, registration, sessions, and venue.
+          </p>
+        </div>
+
+        <!-- Accordion List -->
+        <div class="faq-stack">
+
+          <!-- FAQ Item 1 (Open by default) -->
+          <div class="faq-item open">
+            <button class="faq-toggle-btn" aria-expanded="true">
+              <span class="faq-question-text">What is Qiskit Fall Fest 2026?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Qiskit Fall Fest 2026 is a university-hosted quantum computing festival organized by Dr.RVR NRI Institute of Technology Deemed to be University in partnership with the global Qiskit community. It features a virtual inauguration, a 6-day online guest lecture series, an online Ideathon, and an in-person school Project Expo.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">Who can attend?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>The event is open to undergraduate and postgraduate students, researchers, faculty members, school students (for Project Expo), software developers, and quantum enthusiasts from any academic institution or organization.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">Is the event free?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Yes! Participation in Qiskit Fall Fest 2026 is completely free of charge. Registration in advance is required.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">Do I need prior quantum computing knowledge?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>No prior quantum computing experience is required. Sessions start from introductory fundamentals (such as Qiskit 101) to help beginners build understanding before exploring more advanced concepts.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">Will certificates be provided?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Yes. All registered attendees who actively participate in the sessions, ideathon, or expo tracks will receive official certificates of participation co-branded by NRI Institute of Technology.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">Is the event online or offline?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Qiskit Fall Fest 2026 is conducted in a <strong>Hybrid Mode</strong> featuring both virtual and in-person events:</p>
+              <p>• <strong>Online Events (Virtual Only):</strong> The <strong>Inauguration of Qiskit Fall Fest 2026</strong> (23-11-2026), the <strong>6-Day Guest Lecture Series</strong> (23–28 November 2026) featuring global researchers & experts, and the <strong>Ideathon</strong> (28 November 2026) are conducted virtually online.</p>
+              <p>• <strong>Offline Events (On-Campus):</strong> The <strong>Project Expo</strong> (30 November 2026, for in-school students) is held in-person on campus at Dr.RVR NRI Institute of Technology Deemed to be University.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">Where will the in-person events be held?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>The on-campus sessions will take place at the University Campus, Dr.RVR NRI Institute of Technology Deemed to be University, Agiripalli, Andhra Pradesh.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 8 -->
+          <div class="faq-item">
+            <button class="faq-toggle-btn" aria-expanded="false">
+              <span class="faq-question-text">How can I register?</span>
+              <div class="faq-chevron-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Click the <strong>Register</strong> button on this website and complete the registration form. Once submitted, you’ll be registered for the event.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <!-- Column 1: Brand & Host Info -->
+        <div class="footer-brand-col">
+          <a href="#" class="brand-link" aria-label="Qiskit Fall Fest 2026">
+            <div class="brand-logo-box">
+              <img src="assets/images/nri-logo.png" alt="NRI University" class="brand-logo-img">
+            </div>
+            <div class="brand-title">
+              <span class="brand-name">Qiskit Fall Fest</span>
+              <span class="brand-year gradient-text">2026</span>
+            </div>
+          </a>
+
+          <p class="footer-tagline">Learn • Build • Explore Quantum Computing</p>
+
+          <p class="footer-org-desc">
+            A university quantum festival organized by Dr.RVR NRIIT Quantum Innovation Cell.
+          </p>
+
+          <div class="footer-contact-details">
+            <p class="contact-row-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Dr. RVR NRI Institute of Technology, Deemed to be University, Agiripalli, AP, India</span>
+            </p>
+            <p class="contact-row-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:adilakshmi@nriit.edu.in" class="footer-email-link">adilakshmi@nriit.edu.in</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 2: Event Navigation Links -->
+        <div class="footer-nav-col">
+          <h4 class="footer-heading-col">Event Navigation</h4>
+          <div class="footer-nav-grid">
+            <a href="#about" class="footer-nav-link">About</a>
+            <a href="#events" class="footer-nav-link">Events</a>
+            <a href="#organizers" class="footer-nav-link">Organizers</a>
+            <a href="#faq" class="footer-nav-link">FAQ</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Connect & Back to top -->
+        <div class="footer-connect-col">
+          <div class="connect-wrapper">
+            <h4 class="footer-heading-col">Connect With Us</h4>
+            <div class="social-links-row">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn glass-panel">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn glass-panel">
+                <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-btn glass-panel">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn glass-panel">
+                <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <button id="btn-back-to-top" class="btn-back-to-top glass-panel" aria-label="Scroll back to top">
+            <span>Back to top</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="container footer-bottom-row" style="padding-left: 0; padding-right: 0;">
+        <p>© 2026 Qiskit Fall Fest. All rights reserved.</p>
+        <p class="footer-univ-text">
+          Dr. RVR NRI Institute of Technology Deemed to be University
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
