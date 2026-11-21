@@ -47,7 +47,9 @@ export const Footer = () => {
               </li>
               <li className="text-sm text-text-secondary flex flex-col gap-1">
                 <span className="text-xs font-medium text-text-primary">Email</span>
-                <span className="italic text-text-secondary/70">TBD (Coming Soon)</span>
+                <a href="mailto:adilakshmi@nriit.edu.in" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm px-1 py-0.5 w-max">
+                  adilakshmi@nriit.edu.in
+                </a>
               </li>
             </ul>
 

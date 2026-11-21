@@ -56,7 +56,12 @@ export const Footer = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-purple-400 shrink-0" />
-                <span>adilakshmi@nriit.edu.in</span>
+                <a
+                  href="mailto:adilakshmi@nriit.edu.in"
+                  className="hover:text-[#00F0FF] transition-colors"
+                >
+                  adilakshmi@nriit.edu.in
+                </a>
               </p>
             </div>
           </div>
