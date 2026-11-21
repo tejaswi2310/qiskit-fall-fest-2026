@@ -104,6 +104,20 @@ export const organizerTeam: Organizer[] = [
     role: "Co-Organizer (Student)",
     affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
     initial: "A"
+  },
+  {
+    id: "kadali-raghava-satya-sai-rajesh",
+    name: "Kadali Raghava Satya Sai Rajesh",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    initial: "K"
+  },
+  {
+    id: "peketi-hemanth-kumar",
+    name: "Peketi Hemanth Kumar",
+    role: "Co-Organizer (Student)",
+    affiliation: "Dr. RVR NRI Institute of Technology - Deemed to be University",
+    initial: "P"
   }
 ];
 
